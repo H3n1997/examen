@@ -10,9 +10,12 @@
 			<input type="text" placeholder="Nombre del alumno" required id="alumno">
 			<input type="submit" value="Dar Alta">
 		</form>
-		<section class="exa">
-		<p class="examen"></p>
-		</section>
+	</div>
+	<div class="dibuja">
+		<form id="fromExa">
+			<input type="submit" value="comienza">
+		</form>
+		
 	</div>
 	<script type="text/javascript" src="jquery.js"></script>
 	<script type="text/javascript" src="proceso.js"></script>

@@ -14,4 +14,10 @@ function altaAlumno(e){
 	.done(function() {
 		console.log("success");
 	});
+	// $('div.dibuja').append('<input type="submit" value="Comenzar">');
+	$('form#fromExa').on('submit', comienzo);
+}
+function comienzo(e){
+	e.preventDefault();
+	console.log('entra al comienzo');
 }
