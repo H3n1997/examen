@@ -18,18 +18,5 @@ function altaAlumno(e){
 }
 function comienzo(e){
 	e.preventDefault();
-	console.log('entra en esta funcion');
-	$.ajax({
-		url: 'preguntas.php',
-		type: 'GET',
-		dataType: 'JSON',
-	})
-	.done(function(data) {
-		console.log("success");
-		var conecta="";
-		for(x in data){
-			conecta=conecta+'<p value='+data[x].id+'>'+data[x].nombre+'</p>'
-		}
-		$('div.preg').append(cadena);
-	});
+	$('table').addClass('muestra');
 }

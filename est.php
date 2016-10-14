@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>examen</title>
+	<link rel="stylesheet" href="estilo.css">
 </head>
 <body>
 	<div class="alumno">
@@ -26,6 +27,22 @@
     			echo '<td>' . $fila['id'] . '</td><td>' . $fila['pregunta'] . '</td>'; 
     			echo '</tr>';
 			}
+			echo '</table>';
+			mysql_free_result($muestra);
+			?>
+		</div>
+		<div class="res">
+			<?php
+			include 'conecta.php';                                    
+			$query='select * from preguntas';
+			$muestra=mysql_query($query);
+			echo '<table>';
+			while ($fila=mysql_fetch_array($muestra)) {
+				echo '<tr>'; 
+    			echo '<td>' . $fila['id'] . '</td><td>' . $fila['pregunta'] . '</td>'; 
+    			echo '</tr>';
+			}
+			echo '</table>';
 			mysql_free_result($muestra);
 			?>
 		</div>
