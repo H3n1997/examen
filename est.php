@@ -21,6 +21,7 @@
 			include 'conecta.php';                                    
 			$query='select * from preguntas';
 			$muestra=mysql_query($query);
+			echo '<h2>Preguntas de Historia</h2>';
 			echo '<table>';
 			while ($fila=mysql_fetch_array($muestra)) {
 				echo '<tr>'; 
@@ -34,12 +35,13 @@
 		<div class="res">
 			<?php
 			include 'conecta.php';                                    
-			$query='select * from preguntas';
+			$query='select * from respuesta';
 			$muestra=mysql_query($query);
+			echo '<h2>respuestas</h2>';
 			echo '<table>';
 			while ($fila=mysql_fetch_array($muestra)) {
 				echo '<tr>'; 
-    			echo '<td>' . $fila['id'] . '</td><td>' . $fila['pregunta'] . '</td>'; 
+    			echo '<td>' . $fila['id'] . '</td><td>' . $fila['a'] . '</td><td>' . $fila['b'] . '</td><td>' . $fila['c'] . '</td><td>' . $fila['d'] . '</td>'; 
     			echo '</tr>';
 			}
 			echo '</table>';
