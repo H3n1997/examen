@@ -1,3 +1,9 @@
+commit cf30a0ea31610146216a4e8fa8eb10e2f586bf14
+Author: H3n1997 <henry_bm76@hotmail.com>
+Date:   Thu Oct 13 12:29:30 2016 -0500
+
+    creando preguntas
+
 commit c68825ff21ff946a7fab9d10038231aa09bb32d4
 Author: H3n1997 <henry_bm76@hotmail.com>
 Date:   Thu Oct 13 11:45:54 2016 -0500

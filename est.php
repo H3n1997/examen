@@ -15,7 +15,20 @@
 		<form id="fromExa">
 			<input type="submit" value="comienza">
 		</form>
-		
+		<div class="preg">
+			<?php
+			include 'conecta.php';                                    
+			$query='select * from preguntas';
+			$muestra=mysql_query($query);
+			echo '<table>';
+			while ($fila=mysql_fetch_array($muestra)) {
+				echo '<tr>'; 
+    			echo '<td>' . $fila['id'] . '</td><td>' . $fila['pregunta'] . '</td>'; 
+    			echo '</tr>';
+			}
+			mysql_free_result($muestra);
+			?>
+		</div>
 	</div>
 	<script type="text/javascript" src="jquery.js"></script>
 	<script type="text/javascript" src="proceso.js"></script>
