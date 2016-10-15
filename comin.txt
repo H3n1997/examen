@@ -1,3 +1,9 @@
+commit c05540ea884f7d2ea7860ef335568179bc77765f
+Author: H3n1997 <henry_bm76@hotmail.com>
+Date:   Fri Oct 14 21:30:27 2016 -0500
+
+    funcio de botones
+
 commit 700fee64ba9358abcc9772cbf88cdbc7d28daa8b
 Author: H3n1997 <henry_bm76@hotmail.com>
 Date:   Fri Oct 14 15:29:21 2016 -0500
