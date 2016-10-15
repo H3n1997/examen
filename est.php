@@ -37,11 +37,13 @@
 			include 'conecta.php';                                    
 			$query='select * from respuesta';
 			$muestra=mysql_query($query);
+			$contador=0;
 			echo '<h2>respuestas</h2>';
 			echo '<table>';
 			while ($fila=mysql_fetch_array($muestra)) {
+				$contador=$contador+1;
 				echo '<tr>'; 
-    			echo '<td>' . $fila['id'] . '</td><td>' . $fila['a'] . '</td><td>' . $fila['b'] . '</td><td>' . $fila['c'] . '</td><td>' . $fila['d'] . '</td>'; 
+    			echo '<td>' . $fila['id'] . '</td><td>' . $fila['a'] .'<button id=a'.$contador.'>X</button>' . '</td><td>' . $fila['b'] .'<button id=b'.$contador.'>X</button>' . '</td><td>' . $fila['c'] .'<button id=c'.$contador.'>X</button>' . '</td><td>' . $fila['d'] .'<button id=d'.$contador.'>X</button>' . '</td>'; 
     			echo '</tr>';
 			}
 			echo '</table>';

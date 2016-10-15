@@ -1,3 +1,15 @@
+commit 700fee64ba9358abcc9772cbf88cdbc7d28daa8b
+Author: H3n1997 <henry_bm76@hotmail.com>
+Date:   Fri Oct 14 15:29:21 2016 -0500
+
+    respuestas colocadas
+
+commit 88afa5230ce8202956266f7620477da473787cbb
+Author: H3n1997 <henry_bm76@hotmail.com>
+Date:   Fri Oct 14 15:13:42 2016 -0500
+
+    esconde preguntas
+
 commit 48993e6f27a0ec511439de91e3d1de8d6154c930
 Author: H3n1997 <henry_bm76@hotmail.com>
 Date:   Fri Oct 14 14:41:56 2016 -0500
