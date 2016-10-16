@@ -6,15 +6,16 @@
 	<link rel="stylesheet" href="estilo.css">
 </head>
 <body>
+	<h1 id="nA"></h1>
 	<div class="alumno">
 		<form id="fromAlumno">
 			<input type="text" placeholder="Nombre del alumno" required id="alumno">
-			<input type="submit" value="Dar Alta">
+			<input type="submit" id="al" value="Dar Alta">
 		</form>
 	</div>
 	<div class="dibuja">
 		<form id="fromExa">
-			<input type="submit" value="comienza">
+			<input type="submit" id="com" value="comienza">
 		</form>
 		<div class="preg">
 			<?php
@@ -39,11 +40,11 @@
 			$muestra=mysql_query($query);
 			$contador=0;
 			echo '<h2>respuestas</h2>';
-			echo '<table>';
+			echo '<table class="re">';
 			while ($fila=mysql_fetch_array($muestra)) {
 				$contador=$contador+1;
-				echo '<tr>'; 
-    			echo '<td>' . $fila['id'] . '</td><td>' . $fila['a'] .'<button id=a'.$contador.'>X</button>' . '</td><td>' . $fila['b'] .'<button id=b'.$contador.'>X</button>' . '</td><td>' . $fila['c'] .'<button id=c'.$contador.'>X</button>' . '</td><td>' . $fila['d'] .'<button id=d'.$contador.'>X</button>' . '</td>'; 
+				echo '<tr id=fila'.$contador.'>'; 
+    			echo '<td>' . $fila['id'] . '</td><td id="columna">' . $fila['a'].'  ' .'<button id=a'.$contador.'>X</button>' . '</td><td id="columna">' . $fila['b'].'  ' .'<button id=b'.$contador.'>X</button>' . '</td><td id="columna">' . $fila['c'].'  ' .'<button id=c'.$contador.'>X</button>' . '</td><td id="columna">' . $fila['d'].'  ' .'<button id=d'.$contador.'>X</button>' . '</td>'; 
     			echo '</tr>';
 			}
 			echo '</table>';

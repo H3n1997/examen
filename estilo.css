@@ -7,3 +7,13 @@ table{
 .muestra{
 	display: block;
 }
+.esconde{
+	display: none;
+}
+td#columna{
+	width: 26%;
+	font-family: 'trebuchet MS' , 'Lucida sans' , Arial;
+	border: solid #ccc 1px;
+  	border-collapse: separate;
+  	border-spacing: 0;
+}
